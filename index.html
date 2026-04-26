@@ -30,10 +30,10 @@
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="font-bold text-lg text-slate-800">Phan Trung Nhựt's Report</div>
             <div class="hidden md:flex space-x-6">
-                <a href="#overview" class="text-slate-600 hover:text-indigo-600 transition-colors">Overview</a>
-                <a href="#courses" class="text-slate-600 hover:text-indigo-600 transition-colors">Course Details</a>
-                <a href="#future-plans" class="text-slate-600 hover:text-indigo-600 transition-colors">Future Plans</a>
-                <a href="#reflection" class="text-slate-600 hover:text-indigo-600 transition-colors">Self-Reflection</a>
+                <a href="#overview" class="text-slate-600 hover:text-sky-600 transition-colors">Overview</a>
+                <a href="#courses" class="text-slate-600 hover:text-sky-600 transition-colors">Course Details</a>
+                <a href="#future-plans" class="text-slate-600 hover:text-sky-600 transition-colors">Future Plans</a>
+                <a href="#reflection" class="text-slate-600 hover:text-sky-600 transition-colors">Self-Reflection</a>
             </div>
         </nav>
     </header>
@@ -41,10 +41,10 @@
     <main class="container mx-auto px-6 py-12">
 
         <section id="hero" class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">MOOC Machine Learning Completion Report</h1>
-            <p class="text-lg text-slate-600 max-w-3xl mx-auto">An interactive summary of my completion of the Machine Learning training programs and how I plan to apply these core algorithms into practical data science and AI applications.</p>
-            <div class="bg-indigo-50 text-indigo-800 p-6 rounded-lg mt-8 text-left max-w-3xl mx-auto">
-                <p class="font-semibold text-lg">To my lecturer,Mr. Bùi Duy Đăng,,</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">MOOC Professional Certificate Completion Report</h1>
+            <p class="text-lg text-slate-600 max-w-3xl mx-auto">An interactive summary of my completion of the `Google Advanced Data Analytics` certificate and my plan to apply this knowledge to the `Nhập môn học máy` course.</p>
+            <div class="bg-sky-50 text-sky-800 p-6 rounded-lg mt-8 text-left max-w-3xl mx-auto">
+                <p class="font-semibold text-lg">To my lecturer, Bùi Duy Đăng,</p>
                 <p class="mt-2 text-slate-700 leading-relaxed">
                     I would like to express my sincere and profound gratitude to you. After this term, I have learned a great deal, not just the specialized knowledge from the data analysis course, but something even more important: the ability to self-learn. This is the most valuable lesson that I believe will shape my future academic and professional path.
                 </p>
@@ -56,13 +56,13 @@
                 <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Summary of Accomplishments</h2>
                 <div class="grid md:grid-cols-3 gap-8 items-center">
                     <div class="md:col-span-2">
-                        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Specialization Overview</h3>
+                        <h3 class="text-xl font-semibold text-sky-700 mb-3">Report Overview</h3>
                         <p class="text-slate-600 leading-relaxed">
-                            This report provides a detailed account of my process and success in completing the MOOC professional certificate. I have completed the entire `Google Advanced Data Analytics` certificate and `Unsupervised learning` course on the Coursera platform, which totally includes eight specialized courses. This achievement is verified by a valid digital certificate, demonstrating a serious commitment to self-study and the acquisition of complex, practical skills. The report not only provides evidence of course completion but also outlines a specific, systematic plan to integrate and apply the learned data analysis skills into practical exercises and projects for the `Nhập môn học máy` course.
+                            This report provides a detailed account of my process and success in completing the MOOC professional certificate. I have completed the entire `Google Advanced Data Analytics` certificate on the Coursera platform, which includes nine specialized courses. This achievement is verified by a valid digital certificate, demonstrating a serious commitment to self-study and the acquisition of complex, practical skills. The report not only provides evidence of course completion but also outlines a specific, systematic plan to integrate and apply the learned data analysis skills into practical exercises and projects for the `Nhập môn học máy` course.
                         </p>
-                        <div class="mt-6 flex flex-wrap gap-4">
-                             <a href="https://www.coursera.org/account/accomplishments/specialization/JPAWKY2FQPU7" target="_blank" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition-transform hover:scale-105">
-                                View Specialization Certificate
+                        <div class="mt-6">
+                             <a href="https://coursera.org/share/ec0b2d44221f10082fada60ae6a1d01f" target="_blank" class="inline-block bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-700 transition-transform hover:scale-105">
+                                View Full Certificate
                             </a>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                         <div class="chart-container">
                             <canvas id="completionChart"></canvas>
                         </div>
-                        <p class="mt-4 text-center font-semibold text-slate-700 text-lg">Curriculum Mastery</p>
+                        <p class="mt-4 text-center font-semibold text-slate-700 text-lg">Certificate Completion</p>
                     </div>
                 </div>
             </div>
@@ -78,11 +78,17 @@
 
         <section id="courses" class="mb-20 scroll-mt-20">
             <h2 class="text-3xl font-bold text-slate-800 mb-2 text-center">Course Details</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Select a course from the list to see detailed content, the challenges I faced, and how I plan to apply these concepts to my current projects.</p>
+            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">The `Google Advanced Data Analytics` professional certificate is a comprehensive program. Select a course from the list to see detailed content and my learning experience.</p>
+            
+            <div class="flex justify-center mb-8 space-x-4">
+                <button id="tab-da" class="px-6 py-2 rounded-full font-semibold bg-sky-600 text-white transition-colors shadow-sm">Data Analytics</button>
+                <button id="tab-ml" class="px-6 py-2 rounded-full font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300 transition-colors shadow-sm">Machine Learning</button>
+            </div>
+
             <div class="flex flex-col md:flex-row gap-8">
                 <div class="md:w-1/3">
                     <ul id="course-list" class="bg-white rounded-xl shadow-md p-4 space-y-2">
-                    </ul>
+                        </ul>
                 </div>
                 <div class="md:w-2/3">
                     <div id="course-details" class="bg-white rounded-xl shadow-md p-8 min-h-[300px]">
@@ -94,14 +100,14 @@
 
         <section id="future-plans" class="mb-20 scroll-mt-20">
             <h2 class="text-3xl font-bold text-slate-800 mb-2 text-center">Future Plans</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Bridging the gap between technical execution and real-world impact.</p>
+            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Beyond completing the `Nhập môn học máy` course, I plan to continue honing my skills to advance my career.</p>
             <div class="flex justify-center">
                 <div class="bg-white rounded-xl shadow-md p-8 max-w-lg w-full flex items-start space-x-4">
-                    <span class="text-4xl text-indigo-600 mt-1">🎓</span>
+                    <span class="text-4xl text-sky-600 mt-1">🚀</span>
                     <div>
-                        <h3 class="text-2xl font-semibold text-slate-800 mb-2">Economics & AI Integration</h3>
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-2">My Continued Learning Journey</h3>
                         <p class="text-slate-600 leading-relaxed">
-                            My long-term academic goal is to pursue a Master's degree in Economics. The machine learning techniques I have acquired—particularly unsupervised learning and complex data visualization via Tableau—will allow me to build advanced predictive economic models. I aim to merge high-level data science with economic theory to extract true business value.
+                            I plan to continue my self-study and complete further specializations in `Google Advanced Data Analytics`. This will directly support my studies in `Nhập môn học máy` by providing me with advanced skills in machine learning and algorithms.
                         </p>
                     </div>
                 </div>
@@ -112,11 +118,11 @@
             <div class="bg-white p-8 rounded-xl shadow-md">
                 <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Self-Reflection</h2>
                 <div class="prose max-w-none text-slate-600 leading-relaxed">
-                    <p>Tackling advanced machine learning algorithms required a highly disciplined approach to studying. Rather than simply watching the lectures, I actively utilized the Feynman technique, forcing myself to explain complex concepts like cost functions and gradient descent on paper as if I were teaching a beginner. If I stumbled during the explanation, I knew exactly which part of the math I needed to revisit.</p>
-                    <blockquote class="border-l-4 border-indigo-300 pl-4 italic">
-                        Applying the 80/20 Pareto principle to my studies meant focusing the majority of my time on understanding the core mathematical logic and data preparation phases, as those dictate the success of any AI model far more than the final implementation syntax.
+                    <p>The process of completing the `Google Advanced Data Analytics` professional certificate has equipped me with a solid foundation of mindset and skills, which is deeply relevant to the `Nhập môn học máy` course. The link between these two fields is clear: data analysis is an indispensable prerequisite for artificial intelligence. The course taught a systematic workflow, from defining questions, collecting, cleaning, and analyzing data to visualizing and communicating results. This mindset helps shape a scientific approach to AI problems, rather than just blindly applying algorithms. For example, when faced with a raw dataset for a machine learning model, the skills in data cleaning using SQL and R become incredibly useful to remove noise and normalize the data, ensuring the AI model receives the highest quality input.</p>
+                    <blockquote class="border-l-4 border-sky-300 pl-4 italic">
+                        When faced with a raw dataset for a machine learning model, the skills in data cleaning using SQL and R become incredibly useful to remove noise and normalize the data, ensuring the AI model receives the highest quality input.
                     </blockquote>
-                    <p>The concepts of Recommender Systems were particularly eye-opening. Understanding collaborative filtering gave me a completely new perspective on database architecture. Moving forward, I am confident in my ability to utilize Python, PyTorch, and robust exploratory data analysis to build systems that aren't just functionally complete, but genuinely intelligent and optimized.</p>
+                    <p>One of the most notable skills honed is R programming. The "Data Analysis with R Programming" course provided a powerful tool for data manipulation and analysis, serving as a necessary stepping stone for learning more complex libraries and models in Artificial Intelligence. The foundation in R and packages like `tidyverse` can be directly applied to prepare data for `classification` and `regression` algorithms in the `Nhập môn học máy` course. Furthermore, the data visualization skills using Tableau also help present AI model results in a more intuitive and understandable way, which is a crucial aspect of any data science project.</p>
                 </div>
             </div>
         </section>
@@ -124,91 +130,113 @@
     
     <footer class="bg-slate-800 text-slate-300 mt-20">
         <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2026 Phan Trung Nhựt | Data Science & Machine Learning Portfolio</p>
-            <p class="text-sm text-slate-400 mt-2">This interactive report was created to present my MOOC progress and academic vision.</p>
+            <p>&copy; 2025 Phan Trung Nhựt | Academic Report for the `Nhập môn học máy` Course</p>
+            <p class="text-sm text-slate-400 mt-2">This interactive report was created to present my MOOC progress.</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const courseData = [
-                { 
-                    id: 1, 
-                    title: "Unsupervised Learning, Recommenders, Reinforcement Learning", 
-                    content: "This was a major focus area for my studies. I learned how to build recommender systems using collaborative filtering and content-based deep learning methods. Furthermore, I delved into reinforcement learning to understand how algorithms can learn to make decisions through trial and error.", 
-                    challenges: "Grasping the mathematics behind reinforcement learning state-action values was initially tough. I overcame this by writing out the Bellman equations manually and testing small logic blocks in a Jupyter Notebook environment.", 
-                    completionTime: "~35 hours", 
-                    startDate: "February 2026", 
-                    studyHours: "~8 hours/week", 
-                    url: "https://www.coursera.org/account/accomplishments/verify/GVBPID3L66OE",
-                    buttonText: "View Course Certificate"
-                },
-                { 
-                    id: 2, 
-                    title: "Supervised Machine Learning: Regression and Classification", 
-                    content: "This module covered the fundamentals of predictive modeling. I learned how to implement linear and logistic regression in Python using libraries like NumPy and Pandas, and how to properly train, validate, and test data.", 
-                    challenges: "Translating theoretical regression models into clean, efficient Python code required optimizing my workflow in Visual Studio Code.", 
-                    completionTime: "~33 hours", 
-                    startDate: "January 2026", 
-                    studyHours: "~7 hours/week", 
-                    url: "https://www.coursera.org/account/accomplishments/specialization/JPAWKY2FQPU7",
-                    buttonText: "View Specialization"
-                },
-                { 
-                    id: 3, 
-                    title: "Advanced Learning Algorithms", 
-                    content: "Focused heavily on building and training neural networks using PyTorch and TensorFlow. Explored activation functions, multiclass classification, and the backpropagation algorithm.", 
-                    challenges: "Managing remote computing resources and GPU instances to train larger models required setting up custom SSH configurations and managing environments carefully.", 
-                    completionTime: "~40 hours", 
-                    startDate: "January 2026", 
-                    studyHours: "~9 hours/week", 
-                    url: "https://www.coursera.org/account/accomplishments/specialization/JPAWKY2FQPU7",
-                    buttonText: "View Specialization"
-                }
+            // Data Analytics Courses
+            const daCourseData = [
+                { id: 1, title: "Foundations: Data, Data, Everywhere", content: "This course introduces fundamental concepts of the data world, including data types, the data lifecycle, and the role of a data analyst. It serves as an important stepping stone to building a foundational mindset before delving into specific tools.", challenges: "No significant challenges, as this is foundational and highly theoretical knowledge.", completionTime: "~20 hours", startDate: "02/07/2025", studyHours: "~5 hours/week", url: "https://coursera.org/share/43be85de025ec7c3fac89697bf0c0227" },
+                { id: 2, title: "Ask Questions to Make Data-Driven Decisions", content: "This course focuses on critical thinking skills and asking the right questions to identify business problems. I learned how to transform business questions into questions that can be solved with data.", challenges: null, completionTime: "~25 hours", startDate: "15/07/2025", studyHours: "~6 hours/week", url: "https://coursera.org/share/4d5406f257888c29735a159a09e354d9" },
+                { id: 3, title: "Prepare Data for Exploration", content: "I became familiar with the concepts and tools for data preparation, including collecting data from various sources and organizing them effectively.", challenges: null, completionTime: "~30 hours", startDate: "25/07/2025", studyHours: "~7 hours/week", url: "https://coursera.org/share/81bae82531d26dba63c82a95affa2835" },
+                { id: 4, title: "Process Data from Dirty to Clean", content: "This is one of the most practical courses, where I learned how to clean and process raw data using tools like SQL. This skill is extremely important because real-world data is rarely clean and structured.", challenges: "Initially, getting used to SQL syntax was a challenge. I overcame this by practicing many exercises on the BigQuery platform to master the basic commands.", completionTime: "~35 hours", startDate: "05/08/2025", studyHours: "~8 hours/week", url: "https://coursera.org/share/d32126df17430eb9f48454482bac5593" },
+                { id: 5, title: "Analyze Data to Answer Questions", content: "The course delves into data analysis by using statistical functions and tools. I learned how to use spreadsheets to perform simple analyses and draw preliminary conclusions.", challenges: null, completionTime: "~40 hours", startDate: "15/08/2025", studyHours: "~9 hours/week", url: "https://coursera.org/share/d932b6dcf1be8576d2859682802fe9f7" },
+                { id: 6, title: "Share Data Through the Art of Visualization", content: "This course provides skills in data visualization using Tableau. I practiced creating charts, dashboards, and reports to effectively communicate insights from data.", challenges: null, completionTime: "~30 hours", startDate: "25/08/2025", studyHours: "~7 hours/week", url: "https://coursera.org/share/dc7180c8e415ffdfc0de5a2cb739d3de" },
+                { id: 7, title: "Data Analysis with R Programming", content: "This is the most technically important course, introducing the R programming language. I learned how to use R to process, clean, and analyze data in the RStudio environment.", challenges: "The transition from using spreadsheets to R programming was a challenge. I spent extra time on weekends practicing programming exercises, learning about packages (`tidyverse`, `ggplot2`), and participating in discussion forums to master the syntax.", completionTime: "~45 hours", startDate: "05/09/2025", studyHours: "~10 hours/week", url: "https://coursera.org/share/61f02edc6b6653df29010ca1a65dc07f" },
+                { id: 8, title: "Google Advanced Data Analytics Capstone", content: "The final course of the certificate, where I applied all the knowledge learned to complete a real-world project. This is the strongest evidence of my ability to work independently and solve real-world problems.", challenges: null, completionTime: "~50 hours", startDate: "15/09/2025", studyHours: "~12 hours/week", url: "https://coursera.org/share/64c0fd8b0fcbb500ef9baa02a1e08edd" },
+                { id: 9, title: "Accelerate Your Job Search with AI", content: "This supplementary course provides knowledge on how to optimize one's profile and job search process in the data analytics field, with the support of AI tools.", challenges: null, completionTime: "~10 hours", startDate: "25/09/2025", studyHours: "~5 hours/week", url: "https://coursera.org/share/41d44666aa6753b83647b6396915cab5" }
+            ];
+
+            // Machine Learning Courses (Placeholder data)
+            const mlCourseData = [
+                { id: 1, title: "Machine Learning Foundations", content: "Overview of Machine Learning algorithms, supervised vs unsupervised learning.", challenges: "Understanding complex mathematical concepts behind models.", completionTime: "~25 hours", startDate: "01/10/2025", studyHours: "~6 hours/week", url: "#" },
+                { id: 2, title: "Applied Regression Models", content: "Deep dive into linear and logistic regression models.", challenges: "Feature engineering and managing overfitting.", completionTime: "~30 hours", startDate: "15/10/2025", studyHours: "~8 hours/week", url: "#" }
             ];
 
             const courseList = document.getElementById('course-list');
             const courseDetails = document.getElementById('course-details');
+            const btnTabDA = document.getElementById('tab-da');
+            const btnTabML = document.getElementById('tab-ml');
             let activeListItem = null;
 
-            courseData.forEach(course => {
-                const li = document.createElement('li');
-                li.innerHTML = `<button class="w-full text-left px-4 py-3 rounded-lg hover:bg-indigo-50 hover:text-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 font-medium">${course.title}</button>`;
-                li.addEventListener('click', () => {
-                    if (activeListItem) {
-                        activeListItem.querySelector('button').classList.remove('bg-indigo-100', 'text-indigo-700');
-                    }
-                    li.querySelector('button').classList.add('bg-indigo-100', 'text-indigo-700');
-                    activeListItem = li;
+            function renderCourses(data) {
+                // Xóa danh sách và nội dung cũ
+                courseList.innerHTML = '';
+                courseDetails.innerHTML = '<p class="text-slate-500 text-center pt-16">Select a course to view details here.</p>';
+                activeListItem = null;
 
-                    let detailsHtml = `
-                        <h3 class="text-xl font-bold text-slate-800 mb-4">${course.title}</h3>
-                        <div class="space-y-2 mb-4 text-sm text-slate-600">
-                            <p><strong>Completion Time:</strong> ${course.completionTime}</p>
-                            <p><strong>Start Date:</strong> ${course.startDate}</p>
-                            <p><strong>Study Hours:</strong> ${course.studyHours}</p>
-                        </div>
-                        <h4 class="font-semibold text-slate-700 mb-2">Content Learned:</h4>
-                        <p class="text-slate-600 mb-4">${course.content}</p>
-                    `;
-                    if (course.challenges) {
-                        detailsHtml += `
-                            <h4 class="font-semibold text-slate-700 mb-2">Challenges & Solutions:</h4>
-                            <p class="text-slate-600 mb-4">${course.challenges}</p>
+                data.forEach(course => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<button class="w-full text-left px-4 py-3 rounded-lg hover:bg-sky-50 hover:text-sky-700 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500 font-medium">${course.id}. ${course.title}</button>`;
+                    
+                    li.addEventListener('click', () => {
+                        if (activeListItem) {
+                            activeListItem.querySelector('button').classList.remove('bg-sky-100', 'text-sky-700');
+                        }
+                        li.querySelector('button').classList.add('bg-sky-100', 'text-sky-700');
+                        activeListItem = li;
+
+                        let detailsHtml = `
+                            <h3 class="text-xl font-bold text-slate-800 mb-4">${course.title}</h3>
+                            <div class="space-y-2 mb-4 text-sm text-slate-600">
+                                <p><strong>Completion Time:</strong> ${course.completionTime}</p>
+                                <p><strong>Start Date:</strong> ${course.startDate}</p>
+                                <p><strong>Study Hours:</strong> ${course.studyHours}</p>
+                            </div>
+                            <h4 class="font-semibold text-slate-700 mb-2">Content Learned:</h4>
+                            <p class="text-slate-600 mb-4">${course.content}</p>
                         `;
-                    }
-                    detailsHtml += `
-                        <div class="mt-6 text-center">
-                            <a href="${course.url}" target="_blank" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition-transform hover:scale-105">
-                                ${course.buttonText}
-                            </a>
-                        </div>
-                    `;
-                    courseDetails.innerHTML = detailsHtml;
+                        if (course.challenges) {
+                            detailsHtml += `
+                                <h4 class="font-semibold text-slate-700 mb-2">Challenges & Solutions:</h4>
+                                <p class="text-slate-600 mb-4">${course.challenges}</p>
+                            `;
+                        }
+                        detailsHtml += `
+                            <div class="mt-6 text-center">
+                                <a href="${course.url}" target="_blank" class="inline-block bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-700 transition-transform hover:scale-105">
+                                    View Certificate
+                                </a>
+                            </div>
+                        `;
+                        courseDetails.innerHTML = detailsHtml;
+                    });
+                    courseList.appendChild(li);
                 });
-                courseList.appendChild(li);
+            }
+
+            // Tab Event Listeners
+            btnTabDA.addEventListener('click', () => {
+                // Update Button Styles
+                btnTabDA.classList.replace('bg-slate-200', 'bg-sky-600');
+                btnTabDA.classList.replace('text-slate-700', 'text-white');
+                
+                btnTabML.classList.replace('bg-sky-600', 'bg-slate-200');
+                btnTabML.classList.replace('text-white', 'text-slate-700');
+
+                // Render Data Analytics courses
+                renderCourses(daCourseData);
             });
 
+            btnTabML.addEventListener('click', () => {
+                // Update Button Styles
+                btnTabML.classList.replace('bg-slate-200', 'bg-sky-600');
+                btnTabML.classList.replace('text-slate-700', 'text-white');
+                
+                btnTabDA.classList.replace('bg-sky-600', 'bg-slate-200');
+                btnTabDA.classList.replace('text-white', 'text-slate-700');
+
+                // Render Machine Learning courses
+                renderCourses(mlCourseData);
+            });
+
+            // Initialize with Data Analytics tab active
+            renderCourses(daCourseData);
+
+            // Chart Initialization
             const ctx = document.getElementById('completionChart').getContext('2d');
             new Chart(ctx, {
                 type: 'doughnut',
@@ -216,7 +244,7 @@
                     labels: ['Completed'],
                     datasets: [{
                         data: [100],
-                        backgroundColor: ['#4f46e5'],
+                        backgroundColor: ['#0284c7'],
                         borderWidth: 0,
                     }]
                 },
