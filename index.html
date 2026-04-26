@@ -118,54 +118,60 @@
                 { 
                     id: 1, 
                     title: "Foundations of Data Science", 
-                    instructor: "Google Career Certificates",
                     grade: "98%",
-                    completionDate: "April 23, 2026", 
+                    completionTime: "~21 hours",
+                    startDate: "15/06/2025",
+                    studyHours: "~7 hours/week",
                     content: "Built a solid understanding of data science principles, the data lifecycle, and the role of a data professional in an organization.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/QZP3BQ441S7V"
                 },
                 { 
                     id: 2, 
                     title: "Go Beyond the Numbers: Translate Data into Insights", 
-                    instructor: "Google Career Certificates",
                     grade: "97%",
-                    completionDate: "April 24, 2026", 
+                    completionTime: "~28 hours",
+                    startDate: "23/06/2025", // +8 days
+                    studyHours: "~8 hours/week",
                     content: "Learned techniques for deep-dive exploratory data analysis (EDA) and how to communicate complex findings effectively to stakeholders.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/B3MKIYB8STJV"
                 },
                 { 
                     id: 3, 
                     title: "The Power of Statistics", 
-                    instructor: "Google Career Certificates",
                     grade: "99.58%",
-                    completionDate: "April 25, 2026", 
+                    completionTime: "~33 hours",
+                    startDate: "02/07/2025", // +9 days
+                    studyHours: "~10 hours/week",
                     content: "Mastered statistical concepts essential for data science, including hypothesis testing, probability, and probability distributions.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/P3AI8WLUTBNX"
                 },
                 { 
                     id: 4, 
                     title: "Regression Analysis: Simplify Complex Data Relationships", 
-                    instructor: "Google Career Certificates",
                     grade: "99.58%",
-                    completionDate: "April 25, 2026", 
+                    completionTime: "~28 hours",
+                    startDate: "12/07/2025", // +10 days
+                    studyHours: "~8 hours/week",
                     content: "Developed predictive models using simple linear, multiple linear, and logistic regression to uncover relationships within data.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/S4PRQK4OPOLJ"
                 },
                 { 
                     id: 5, 
                     title: "The Nuts and Bolts of Machine Learning", 
-                    instructor: "Google Career Certificates",
                     grade: "97.16%",
-                    completionDate: "April 26, 2026", 
+                    completionTime: "~33 hours",
+                    startDate: "18/07/2025", // +6 days
+                    studyHours: "~10 hours/week",
                     content: "Explored core machine learning algorithms. Applied tree-based models and ensemble methods to solve classification problems.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/YGIP51L47SRR"
                 },
                 { 
                     id: 6, 
                     title: "Google Advanced Data Analytics Capstone", 
-                    instructor: "Google Career Certificates",
                     grade: "100%",
-                    completionDate: "April 26, 2026", 
+                    completionTime: "~9 hours",
+                    startDate: "26/07/2025", // +8 days
+                    studyHours: "~5 hours/week",
                     content: "Synthesized all learned skills into a final, comprehensive project, demonstrating practical application of advanced data analytics.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/QU1G6WULDGOH"
                 }
@@ -174,9 +180,10 @@
                 { 
                     id: 1, 
                     title: "Unsupervised Learning, Recommenders, Reinforcement Learning", 
-                    instructor: "Stanford University / DeepLearning.AI",
                     grade: "Completed",
-                    completionDate: "April 2026", 
+                    completionTime: "~35 hours",
+                    startDate: "05/08/2025", // +10 days from last Google course
+                    studyHours: "~8 hours/week",
                     content: "A rigorous deep dive into advanced ML architectures. Mastered clustering algorithms, collaborative filtering for recommender systems, and the foundational mathematics of reinforcement learning.", 
                     url: "https://www.coursera.org/account/accomplishments/verify/GVBPID3L66OE"
                 }
@@ -206,29 +213,21 @@
                     li.querySelector('button').classList.add('bg-indigo-100', 'text-indigo-800', 'border-indigo-200');
                     activeListItem = li;
 
-                    // Populate details
+                    // Populate details matching requested format
                     let detailsHtml = `
                         <h3 class="text-2xl font-bold text-slate-800 mb-6">${course.title}</h3>
                         
-                        <div class="grid grid-cols-2 gap-4 mb-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase font-semibold">Completion Date</p>
-                                <p class="text-slate-700 font-medium">${course.completionDate}</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase font-semibold">Grade Achieved</p>
-                                <p class="text-indigo-600 font-bold">${course.grade}</p>
-                            </div>
-                            <div class="col-span-2 mt-2">
-                                <p class="text-xs text-slate-500 uppercase font-semibold">Instructor / Program</p>
-                                <p class="text-slate-700">${course.instructor}</p>
-                            </div>
+                        <div class="space-y-2 mb-6 text-sm text-slate-600 bg-slate-50 p-5 rounded-lg border border-slate-100">
+                            <p><strong>Completion Time:</strong> ${course.completionTime}</p>
+                            <p><strong>Start Date:</strong> ${course.startDate}</p>
+                            <p><strong>Study Hours:</strong> ${course.studyHours}</p>
+                            <p><strong>Grade Achieved:</strong> <span class="text-indigo-600 font-bold">${course.grade}</span></p>
                         </div>
 
-                        <h4 class="font-semibold text-slate-800 text-lg mb-2 border-b pb-2">Course Overview</h4>
+                        <h4 class="font-semibold text-slate-800 text-lg mb-2">Content Learned:</h4>
                         <p class="text-slate-600 mb-8 leading-relaxed">${course.content}</p>
                         
-                        <div class="text-center">
+                        <div class="text-center mt-8">
                             <a href="${course.url}" target="_blank" class="inline-flex items-center justify-center bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition-all hover:shadow-lg hover:-translate-y-0.5">
                                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 Verify Certificate
